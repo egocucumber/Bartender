@@ -1,0 +1,125 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url('tavern.png');
+    background-size: cover;
+    font-family: 'Belwe' , sans-serif; 
+    color: white; 
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Belwe', sans-serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    font-family: 'Belwe', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+#game {
+    width: 800px;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+#canvas {
+    top: 100px;
+    border: 1px solid #fff;
+    background: #fff;
+    background-image: url('game-wrap-bg.png');
+}
+
+.bar {
+    background-image: url('bar-background.jpg');
+    background-size: cover;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+button {
+    font-family: 'Belwe', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+select {
+    font-family: 'Belwe', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#score, #timer {
+    font-family: 'Belwe', sans-serif;
+    font-size: 18px;
+    color: #eee;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background-image: url('game-wrap-bg.png');
+}
+
+#recordTable {
+    background-image: url('game-wrap-bg.png');
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Belwe'; 
+    src: url('belwe.otf') format('opentype'); 
+}

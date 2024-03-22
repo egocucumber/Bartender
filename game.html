@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бармен</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Бармен</h1>
+    <p>Отправляйте кружки с пивом по стойкам, по которым приближаются жаждущие. Не дайте им добраться до бара!</p>
+    <div id="game">
+        <canvas id="canvas" width="800" height="600" class="hidden"></canvas>
+        <div id="controls" class="controls">
+            <input type="text" id="userName" placeholder="Введите ваше имя">
+            <button id="submitName">Подтвердить</button>
+            <button id="start">Начать игру</button>
+            <select id="level">
+                <option value="2">Легко</option>
+                <option value="4">Средне</option>
+                <option value="6">Сложно</option>
+                <option value="8">Очень сложно</option>
+            </select>
+            <button id="records">Таблица рекордов</button>
+        </div>
+        <div id="score" class="hidden">Очки: 0</div>
+        <div id="timer" class="hidden">Время: 0</div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">×</span>
+          <div id="recordTable"></div>
+        </div>
+    </div>
+    <div id="endGameModal" class="modal">
+        <div class="modal-content">
+            <p id="endGameMessage"></p>
+            <button id="resetButton">Вернуться в главное меню</button>
+        </div>
+    </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
